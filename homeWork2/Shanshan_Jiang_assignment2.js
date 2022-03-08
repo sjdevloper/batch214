@@ -6,8 +6,8 @@ const itemsObject = [
 
 // Implement a function for generating a new array which doubles the quantity and price in each object.
 const doubleOjects = itemsObject.map((double) => ({
-  ...double,
-  peice: double.price * 2,
+  quantity: double.quantity * 2,
+  price: double.price * 2,
 }));
 
 console.log(doubleOjects);
@@ -22,15 +22,15 @@ console.log(newArray);
 
 // Implement a function to calculate the total value of the items.
 
-const totalPrice = itemsObject.reduce(function (accumulator, item) {
-  return accumulator + item.quantity + item.price;
+const totalPrice = itemsObject.reduce((accumulator, item) => {
+  return accumulator + item.price * item.quantity;
 }, 0);
 
 console.log(totalPrice);
 
 const string =
-  " Perhaps The Easiest-to-understand Case For Reduce Is To Return The Sum Of  All The Elemnts In  An Array";
+  " Perhaps The Easiest-to-understand   Case For Reduce Is To Return The Sum Of  All The Elemnts In  An Array";
 
 // Implement a function to remove all the non-alphabet characters and extra space in the string and convert the string to all lowercase.
-const replaced = string.replace(/[^a-z0-9]/gi, " ").toLowerCase();
+const replaced = string.trim().split(/[ -]+/).join(" ").toLowerCase();
 console.log(replaced);
