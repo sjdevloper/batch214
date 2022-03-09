@@ -92,7 +92,7 @@ const dropDownList = [
   { value: "sanJose", content: "San Jose" },
 ];
 
-const selectList = document.getElementById("select").options;
+const selectList = document.getElementById("select");
 dropDownList.forEach((option) =>
   selectList.add(new Option(option.content, option.value))
 );
