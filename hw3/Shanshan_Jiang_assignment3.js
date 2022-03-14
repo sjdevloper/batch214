@@ -63,21 +63,27 @@ generateTable(table, tableInfo);
 // order list
 const list = ["HTML", "JavaScript", "CSS", "React", "Redux", "Java"];
 
-let orderList = document.getElementById("orderList");
-
-list.forEach((item) => {
+let ol = document.getElementById("orderList");
+let nodes = list.map((item) => {
   let li = document.createElement("li");
-  li.innerText = item;
-  orderList.appendChild(li);
+  li.textContent = item;
+  return li;
 });
+ol.append(...nodes);
+
+// list.forEach((item) => {
+//   let li = document.createElement("li");
+//   li.innerText = item;
+//   ol.appendChild(li);
+// });
 
 // unorder list
-let unorderList = document.getElementById("unorderList");
+let ul = document.getElementById("unorderList");
 
 list.forEach((item) => {
   let li = document.createElement("li");
   li.innerText = item;
-  unorderList.appendChild(li);
+  ul.appendChild(li);
 });
 
 // 3. Given a array and implement a dropdown list with the following options(please find the
@@ -96,3 +102,6 @@ const selectList = document.getElementById("select");
 dropDownList.forEach((option) =>
   selectList.add(new Option(option.content, option.value))
 );
+
+// const selectList = document.getElementById("select");
+// const dropDown = dropDownList.map(({ key, value }) => ({ [key]: selectList }));
