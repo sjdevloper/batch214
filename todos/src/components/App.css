@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.todo-unorder-list {
+  list-style: none;
+}
+
+.todo-content {
+  cursor: pointer;
+  user-select: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
