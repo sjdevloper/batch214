@@ -1,0 +1,17 @@
+.header {
+  background-color: black;
+  padding: 10px;
+  color: white;
+}
+
+.standard-bare {
+  background-color: aliceblue;
+  display: inline-block;
+}
+
+h2,
+p,
+h4 {
+  display: inline-block;
+  padding-left: 30px;
+}
