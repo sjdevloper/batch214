@@ -1,8 +1,0 @@
-.todo-content {
-  cursor: pointer;
-  user-select: none;
-}
-
-.completed {
-  text-decoration: line-through;
-}
