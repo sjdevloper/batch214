@@ -8,8 +8,11 @@ import "./index.css";
 const Header = () => {
   return (
     <div className="header">
+      <div class="container">
+    <nav >
       <h2 >Management</h2>
       <p>chuwa</p>
+      
       <TextField
         className ="standard-bare"
         defaultValue="Search..."
@@ -24,6 +27,8 @@ const Header = () => {
 
       <h4>Sign In</h4>
 
+    </nav>
+    </div>
     </div>
   );
 };
